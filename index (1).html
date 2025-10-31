@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nasty Driller Bot</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #00ffcc;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00ffcc;
+      border: none;
+      cursor: pointer;
+    }
+    #chat {
+      margin-top: 30px;
+    }
+    .msg {
+      margin: 10px 0;
+    }
+    .user {
+      color: #0f0;
+    }
+    .bot {
+      color: #0af;
+    }
+  </style>
+</head>
+<body>
+  <h1>💬 Nasty Driller Bot</h1>
+  <form>
+    <input type="text" placeholder="Type a command like .ping or .ban @user" disabled />
+    <button disabled>Send</button>
+  </form>
+
+  <div id="chat">
+    <div class="msg user">You: .ping</div>
+    <div class="msg bot">Bot: ✅ Bot is alive</div>
+
+    <div class="msg user">You: .promote @royal</div>
+    <div class="msg bot">Bot: 🎖️ Promoted @royal</div>
+
+    <div class="msg user">You: .ban @troll</div>
+    <div class="msg bot">Bot: 🔨 Banned @troll</div>
+
+    <div class="msg user">You: .quote</div>
+    <div class="msg bot">Bot: 💬 'Respect is earned, not given.'</div>
+  </div>
+</body>
+</html>
